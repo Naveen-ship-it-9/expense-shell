@@ -14,7 +14,7 @@ check_root()
     if [ $userid -ne 0 ]
     then
         echo -e "$Y user dont have root access... $N"
-        exit1
+        exit 1
     else
         echo -e "$Y user have root access....$N"
     fi
