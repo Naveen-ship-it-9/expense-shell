@@ -13,20 +13,20 @@ check_root()
 {
     if [ $userid -ne 0 ]
     then
-        echo "user dont have root access"
+        echo -e "$R user dont have root access...$N"
         exit 1
     else
-        echo "user have root access"
+        echo -e "$G user have root access...$N"
     fi
 }
 validate()
 {
     if [ $1 -ne 0 ]
     then
-        echo "$2 is failed"
+        echo -e "$R $2 is failed $N"
         exit 1
     else
-        echo "$2 is succ"
+        echo -e "$G $2 is succ $N"
     fi
 
 }
